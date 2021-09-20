@@ -1,0 +1,152 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: rgb(56, 137, 52);
+}
+
+header {
+    background-image: linear-gradient(to top, rgb(10 44 10), rgb(45 126 82));
+    height: 200px;
+    width: 100%;
+    text-align: center;
+}
+
+header>h1 {
+    color: white;
+    font-size: 40px;
+    padding: 10px;
+    font-weight: 400;
+}
+
+header>h4 {
+    color: white;
+    font-size: 20px;
+    padding: 10px;
+    font-weight: 100;
+}
+
+nav {
+    display: flex;
+    padding: 27px 0px 0px 20px;
+}
+
+nav>a {
+    padding: 5px 10px;
+    font-size: 17px;
+    text-decoration: none;
+    color: rgb(137, 234, 137);
+}
+
+
+main h1 {
+    font-size: 35px;
+}
+
+main h1,h2 {
+    color: green;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+main h2 {
+    background-color: rgba(126, 222, 126, 0.455);
+    padding: 10px;
+    margin: 0px 0px 10px 0px;
+}
+
+main {
+    width: 900px;
+    background-color: white;
+    margin: auto;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    border-radius: 10px;
+}
+
+.conteudo1 {
+    padding: 20px;
+}
+
+.conteudo1 p {
+    text-align: center;
+}
+
+.conteudo1 > img{
+    margin-left: 25px;
+}
+
+.android{
+    text-align: center;
+}
+
+iframe{
+    width: 800px;
+    height: 500px;
+}
+
+.conteudo2{
+    background-color:rgba(126, 222, 126, 0.455);
+    padding: 30px;
+    border-radius: 10px;
+}
+
+.conteudo2 p {
+    text-align: center;
+    padding: 20px;
+}
+
+.lista1{
+    display: inline-block;
+    width: 200px;
+    margin: 0px 190px 0px 0px;
+}
+
+.lista1 > ul{
+    list-style:none;
+}
+
+.lista1>ul>li{
+    margin-bottom: 7px;
+}
+
+.lista1>ul>li> a{
+    text-decoration: none;   
+}
+
+a:hover {
+    background-color: rgb(38, 109, 38);
+    border-radius: 7px;
+    padding: 6px;
+    transition: 1s;
+}
+
+
+@media screen and (max-width:768px) {
+    header {
+        width:900px;
+        height: 360px;
+    }
+    nav {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    header h4{
+    font-size: 26px;
+    }
+
+    nav> a{
+        font-size: 30px;
+    }
+
+    main p{
+        font-size: 20px;
+        font-weight: 600;
+    }
+
+    .lista1>ul>li> a{
+        font-size: 20px;
+    }
+}

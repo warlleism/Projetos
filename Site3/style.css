@@ -1,0 +1,111 @@
+
+body{
+    margin: 0;
+    padding: 0;
+    height: 80vh;
+}
+header{
+    position: relative;/*Relative amarra o item para não fugir com o absolute*/
+    margin: 0;
+    padding: 0;
+    background-color: rgb(240 240 240 / 94%);
+    height: 120px;
+    display: flex;
+    margin-top: 30px;
+    
+}
+
+header > img{
+    position: absolute;
+    width: 220px;
+    height: 80px;
+    margin-top: 20px;
+    left: 480px;
+}
+
+.conteudo{ 
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    right: 400px;
+    bottom: 15px;
+}
+
+ul{
+    list-style: none;
+    display: flex;
+}
+
+ul > li {
+    margin-left: 30px;
+    border-top: 3px solid black ;
+    padding: 10px;
+}
+
+li:hover{
+    border-top: 3px solid rgb(250, 234, 51) ;
+transition: 1s;
+}
+
+ul > li > a{
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    font-size: 15px;
+    color: black; 
+}
+
+.conteudo-visual{
+    margin: 0;
+    padding: 0;
+    background-color: white;
+    height:66vh;
+    position: relative;
+}
+
+.caixa{
+    margin-left: auto;
+    margin-right: auto;
+    position: absolute;
+    top: 16%;
+    left: 30%;
+}
+
+.caixa > h1{
+    padding: 0;
+    margin: 0;
+    font-size: 56px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.caixa > p{
+    font-size: 22px;
+    width: 400px;
+}
+
+
+.carrossel{
+    overflow: hidden;/*não aparece todas as imagens*/
+    height: 430px;
+    width: 430px;
+    position: absolute;
+    right: 20%;
+    top: 5%;
+}
+
+.container{
+    display: flex;/*deixar as imagens uma do lado da outrar*/
+    transition: transform 0.5s ease-in-out;/*Para transição de imagens*/
+}
+
+img{
+    height: 430px;
+    width: 430px;
+}
+
+footer{
+    position: relative;
+    background-color: rgba(0, 0, 0, 0.9);
+    margin: 0;
+    padding: 0;
+    height: 18vh;
+}

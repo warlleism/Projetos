@@ -1,0 +1,146 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: rgb(170, 218, 255);
+}
+form{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    margin: auto;
+    width: 1000px;
+    height: 800px;
+}
+
+fieldset{
+    background-color: white;
+    margin-top: 20px;
+    border-bottom: solid 1px black;
+    margin-bottom: 20px;
+    border-radius: 10px;
+}
+p{
+    margin-bottom: 5px;
+}
+
+.titulo1{
+    padding: 15px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: rgba(173, 182, 182, 0.418);
+    font-size: 25px;
+    font-weight: 700;
+    border-bottom: solid 1px black;
+    background-color: #77b2fa;
+    border-radius: 8px;
+}
+
+.dado1{
+    padding: 15px;
+    display: inline-block;
+}
+
+.dado1 input{
+    width: 14em;
+    height: 2em;
+    border: 2px solid black;
+}
+
+.dado2 {
+    display: inline-block;
+}
+.dado1.dado2 input{  
+    width: 462px;
+    border: 2px solid black;
+}
+
+.dado1.espaco input{
+    width: 400px;
+    border: 2px solid black;
+
+}
+
+.dado1.espaco2 input{
+    width: 280px;
+    border: 2px solid black;
+}
+select{
+    width: 300px;
+    height: 30px;
+    border: 2px solid black;
+}
+.botao{
+    padding: 20px;
+}
+
+button{
+    padding: 20px;
+    border-radius: 5px;
+}
+input:focus{
+    background-color: rgba(61, 113, 255, 0.24);
+}
+
+button:hover{
+    background-color: rgba(61, 113, 255, 0.24);
+}
+
+@media screen and (max-width:768px) {
+    fieldset {
+        width: 800px;
+        margin: auto;
+        margin-bottom: 20px;
+        
+    }
+    select{
+        width: 500px;
+        height: 80px; 
+    }
+    
+
+    p{
+        font-size: 30px;
+    }
+    .dado2 {
+        display:block;
+        
+    }
+
+    .dado1 input{
+        width: 500px;
+        height: 80px;     
+    }
+    
+    .dado1.dado2 input{  
+        width: 500px;
+        height: 80px;      
+    }
+    
+    .dado1.espaco input{
+        width: 500px;
+        height: 80px;      
+    }
+    
+    .dado1.espaco2 input{
+        width: 500px;
+        height: 80px;
+    }
+    
+    fieldset > div{
+        display: flex;
+        text-align: center;
+        flex-direction: column;
+    }
+
+    button{
+        font-size: 40px;
+    }
+}
+
+    
+
+
+
+
+

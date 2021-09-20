@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Style.css">
+    <title>Formulário</title>
+</head>
+
+<body>
+    <form id="form" method="POST" autocomplete="on">
+        <fieldset>
+            <div class="titulo1">
+                <p>Dados de Login</p>
+            </div>
+            <div class="dados">
+                <div class="dado1">
+                    <p>CPF:</p>
+                    <input type="text" name="cpf" id="cpf" maxlength="11" placeholder="000.000.000-00" required>
+                </div>
+                <div class="dado1">
+                    <p>Email:</p>
+                    <input type="email" name="email" id="email" required>
+                </div>
+                <div class="dado1">
+                    <p>Confirmar:</p>
+                    <input type="email" name="email" id="email-confirmado" required>
+                </div>
+                <div class="dado1">
+                    <p>Senha:</p>
+                    <input type="password" name="senha" id="senha" required>
+                </div>
+                <div class="dado1">
+                    <p>Confirmar:</p>
+                    <input type="password" name="senha" id="senha-confirmada" required>
+                </div>
+            </div>
+        </fieldset>
+
+        <fieldset>
+            <div class="titulo1">
+                <p>Dados de Contato</p>
+            </div>
+            <div class="dado1 dado2">
+                <p>Nome:</p>
+                <input type="text" name="nome" id="nome" required>
+            </div>
+
+            <div class="dado1 dado2">
+                <p>Sobrenome:</p>
+                <input type="text" name="Sobrenome" id="Sobrenome" required>
+            </div>
+            <div class="dados">
+                <div class="dado1">
+                    <p>Nacsimento:</p>
+                    <input type="date" name="nascimento" id="nascimento" required>
+                </div>
+                <div class="dado1 espaco">
+                    <p>RG:</p>
+                    <input type="text" name="rg" maxlength="11" id="rg" required>
+                </div>
+                <div class="dado1">
+                    <p>Sexo:</p>
+                    <select class="select" name="sexo" id="sexo" required>
+                        <option>Selecione</option>
+                        <option value="masculino">Masculino</option>
+                        <option value="Feminino">Feminino</option>
+                    </select>
+                </div>
+                <div class="dado1">
+                    <p>CEP:</p>
+                    <input type="text" name="cep" id="cep" maxlength="11" required>
+                </div>
+                <div class="dado1 espaco">
+                    <p>Endereço:</p>
+                    <input type="text" name="endereco" id="endereco" maxlength="30" required>
+                </div>
+
+                <div class="dado1 ">
+                    <p>Nº:</p>
+                    <input type="text" name="num-endereco" id="num-endereco" maxlength="5" required>
+                </div>
+
+                <div class="dado1 espaco2">
+                    <p>Bairro:</p>
+                    <input type="text" name="bairro" id="bairro" maxlength="20" required>
+                </div>
+
+                <div class="dado1 espaco2">
+                    <p>Complemento:</p>
+                    <input type="text" name="complemento" id="complemento" maxlength="20" required>
+                </div>
+
+                <div class="dado1 espaco2">
+                    <p>Cidade:</p>
+                    <input type="text" name="cidade" id="cidade" maxlength="20" required>
+                </div>
+
+                <div class="dado1 espaco2">
+                    <p>Estado:</p>
+                    <input type="text" name="estado" id="estado" maxlength="20" required>
+                </div>
+
+                <div class="dado1 espaco2">
+                    <p>DDD+Telefone:</p>
+                    <input type="tel" name="telefone" id="telefone" maxlength="11" required>
+                </div>
+
+                <div class="dado1 espaco2">
+                    <p>DDD+Celular:</p>
+                    <input type="tel" name="celular" id="celular" maxlength="11" required>
+                </div>
+            </div>
+            <div class="botao">
+                <button type="submit">Enviar</button>
+            </div>
+        </fieldset>
+
+    </form>
+
+    <script src="Script.js"></script>
+</body>
+
+</html>

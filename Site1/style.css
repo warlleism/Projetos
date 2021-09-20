@@ -1,0 +1,127 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: 'KoHo', sans-serif;
+}
+
+h1 {
+    font-family: 'KoHo', sans-serif;
+    color: #fbff00;
+    transition-timing-function: ease;
+    transition-duration: 2s;
+}
+
+nav{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #2c13e7;
+}
+
+nav > h1{
+    font-size: 40px;
+}
+
+nav li > a{
+    font-family: 'KoHo', sans-serif;
+    text-decoration: none;
+    color: #dd64ff;
+    font-weight: 800;
+    font-size: 30px;
+    display: inline-block;
+    padding: 10px;
+    width: 100%;
+    transition-timing-function: ease;
+    transition-duration: 1s;
+}
+
+nav li > a:hover{
+    color: #fbff00;
+}
+
+nav ul{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+nav ul li{
+    text-align: center;
+    width: 100%;
+}
+
+header{
+    background-color: #FFCF56;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+}
+
+header h1{
+    color: #ff0101;
+    margin-bottom: 2em;
+}
+
+header p {
+    margin-bottom:2em ;
+    font-size: 20px;
+    transition-timing-function: ease;
+    transition-duration: 2s;
+}
+
+#fotos{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+#fotos img{
+    width: 100%;
+}
+.botao{
+    text-decoration: none;
+    padding: 20px;
+    color: white;
+    background-color: rgb(109, 62, 236);
+    border: none;
+    transition-duration: 2s;
+}
+
+.botao:hover{
+    border-radius: 50%;
+    background-color: rgb(78, 32, 206); 
+    
+
+}
+
+@media screen and (min-width:768px) {
+
+    nav{
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    nav ul{
+        flex-direction: row;
+        width: 70%;
+    }
+
+    #fotos{
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    #fotos img{
+        width: 33.333%;
+    }
+    
+}
+
