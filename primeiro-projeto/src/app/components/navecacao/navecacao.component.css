@@ -1,0 +1,29 @@
+.sidenav{
+    padding: 20px;
+}
+
+.nave-list a {
+    font-size: 1.5rem;
+}
+
+.nave-list i {
+    margin-right: 15px;
+}
+
+.content{
+    padding: 16px;
+}
+
+@media screen and (max-width:768px) {
+    .nave-list h5{
+        display: none;
+    }
+
+}
+
+@media screen and (max-width:360px) {
+
+    .nave-list {
+        width: 50px;
+    }
+}
